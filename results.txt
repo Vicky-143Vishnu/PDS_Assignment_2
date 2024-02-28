@@ -1,0 +1,43 @@
+Selected Columns:
+  Location  Year  Kilometers_Driven  Power  Price
+      Pune  2015              41000 126.20  12.50
+   Chennai  2011              46000  88.70   4.50
+   Chennai  2012              87000  88.76   6.00
+Coimbatore  2013              40670 140.80  17.74
+    Jaipur  2013              86999  63.10   3.50
+
+Filtered Data (Year > 2015):
+ Unnamed: 0                              Name Location  Year  Kilometers_Driven  Fuel_Type  Transmission Owner_Type  Mileage  Engine  Power  Seats  New_Price  Price  Age
+          7 Toyota Innova Crysta 2.8 GX AT 8S   Mumbai  2016              36000        0.0             0      First    11.36  2755.0 171.50    8.0  21.000000  17.50    8
+         10                  Maruti Ciaz Zeta    Kochi  2018              25692        1.0             1      First    21.56  1462.0 103.25    5.0  10.650000   9.95    6
+         16             Honda Amaze S i-Dtech    Kochi  2016              58950        0.0             1      First    25.80  1498.0  98.60    5.0  20.484564   5.40    8
+         17             Maruti Swift DDiS VDI   Jaipur  2017              25000        0.0             1      First    28.40  1248.0  74.00    5.0  20.484564   5.99    7
+         28               Honda WRV i-VTEC VX    Kochi  2018              37430        1.0             1      First    17.50  1199.0  88.70    5.0  10.570000   9.90    6
+
+Renamed Columns:
+ Unnamed: 0                             Name   Location  Year  Kilometers_Driven  Fuel_Type  Transmission_Type Owner_Type  Mileage  Engine  Power  People_Capacity  New_Price  Price  Age
+          1 Hyundai Creta 1.6 CRDi SX Option       Pune  2015              41000        0.0                  1      First    19.67  1582.0 126.20              5.0  20.484564  12.50    9
+          2                     Honda Jazz V    Chennai  2011              46000        1.0                  1      First    13.00  1199.0  88.70              5.0   8.610000   4.50   13
+          3                Maruti Ertiga VDI    Chennai  2012              87000        0.0                  1      First    20.77  1248.0  88.76              7.0  20.484564   6.00   12
+          4  Audi A4 New 2.0 TDI Multitronic Coimbatore  2013              40670        0.0                  0     Second    15.20  1968.0 140.80              5.0  20.484564  17.74   11
+          6           Nissan Micra Diesel XV     Jaipur  2013              86999        0.0                  1      First    23.08  1461.0  63.10              5.0  20.484564   3.50   11
+
+Sorted by Price:
+ Unnamed: 0                                        Name   Location  Year  Kilometers_Driven  Fuel_Type  Transmission Owner_Type  Mileage  Engine  Power  Seats  New_Price  Price  Age
+       4079 Land Rover Range Rover 3.0 Diesel LWB Vogue  Hyderabad  2017              25000        0.0             0      First    13.33  2993.0  255.0    5.0   2.300000 160.00    7
+       5781                  Lamborghini Gallardo Coupe      Delhi  2011               6500        1.0             0      Third     6.40  5204.0  560.0    2.0  20.484564 120.00   13
+       5919                      Jaguar F Type 5.0 V8 S  Hyderabad  2015               8000        1.0             0      First    12.50  5000.0  488.1    2.0  20.484564 100.00    9
+       1505             Land Rover Range Rover Sport SE      Kochi  2019              26013        0.0             0      First    12.65  2993.0  255.0    5.0   1.390000  97.07    5
+       1974                          BMW 7 Series 740Li Coimbatore  2018              28060        1.0             0      First    12.05  2979.0  320.0    5.0  20.484564  93.67    6
+
+Summary Statistics (Mean Price by Fuel Type):
+Fuel_Type
+0.0    12.960686
+1.0     5.756688
+
+Summary Statistics (Complex):
+               Price             
+                mean   min    max
+Fuel_Type                        
+0.0        12.960686  0.60  160.0
+1.0         5.756688  0.44  120.0
